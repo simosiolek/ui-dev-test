@@ -38,7 +38,7 @@ gulp.task('clean-css', function () {
 gulp.task('scss', ['clean-css'], function () {
 	return gulp.src('./src/scss/main.scss')
 		.pipe(sourcemaps.init())
-	   .pipe(sass())
+	   .pipe(sass().on('error', sass.logError))
 	   .pipe(concat('style.css'))
    	.pipe(sourcemaps.write())
    	.pipe(gulp.dest(folder.css));
