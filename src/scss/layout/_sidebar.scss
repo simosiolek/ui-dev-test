@@ -1,0 +1,14 @@
+// Sidebar
+
+.sidebar {
+	width: 28rem;
+	border-left: 1px solid $sidebar-border-color;
+}
+
+.sidebar__section {
+	padding: 1.5rem 2rem;
+}
+
+.sidebar__section:not(.sidebar__header) {
+	border-top: 1px solid $sidebar-border-color;
+}

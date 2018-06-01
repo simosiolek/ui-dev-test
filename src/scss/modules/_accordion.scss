@@ -1,0 +1,18 @@
+// Accordion
+
+.accordion__title {
+	cursor: pointer;
+	color: #5E5E5E;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.accordion__title:hover {
+	color: red;
+}
+
+.accordion__panel {
+   max-height: 0;
+   overflow: hidden;
+   transition: max-height $transition;
+}
