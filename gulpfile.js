@@ -11,7 +11,6 @@ var 		gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps'); // Create CSS & JS source maps
 
 
-
 // Register folders paths
 //
 var folder = {
@@ -25,7 +24,7 @@ var folder = {
 // Task for SCSS/CSS
 //---------------------------------------------------------------------//
 
-// Clean SCSS/CSS
+// Clean CSS
 //
 gulp.task('clean-css', function () {
   return del([
@@ -34,14 +33,14 @@ gulp.task('clean-css', function () {
 });
 
 
-// Build SCSS/CSS
+// Build CSS
 //
 gulp.task('scss', ['clean-css'], function () {
 	return gulp.src('./src/scss/main.scss')
-		//.pipe(sourcemaps.init())
-	   	.pipe(sass())
-	   	.pipe(concat('style.css'))
-   	///.pipe(sourcemaps.write())
+		.pipe(sourcemaps.init())
+	   .pipe(sass())
+	   .pipe(concat('style.css'))
+   	.pipe(sourcemaps.write())
    	.pipe(gulp.dest(folder.css));
 });
 
