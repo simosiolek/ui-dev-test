@@ -1,0 +1,15 @@
+// Main layout
+
+.site-wrap {
+	display: flex;
+	height: 100vh;
+}
+
+#main {
+	flex: 1 1 auto;
+	padding: 0 2rem;
+}
+
+.sidebar {
+	flex: 0 0 17.5rem;
+}

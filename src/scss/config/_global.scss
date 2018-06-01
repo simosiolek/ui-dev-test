@@ -1,0 +1,19 @@
+// Global elements
+
+html {
+  font-size: font-size;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+  font-weight: $font-weight;
+  line-height: $font-lineheight;
+  color: $font-color;
+  
+}
