@@ -5,13 +5,26 @@
 	<meta charset="UTF-8" /> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
-	<link href="assets/css/style.css" type="text/css" rel="stylesheet">	
+	<link href="./assets/css/style.css" type="text/css" rel="stylesheet">	
+	<style>
+		/* Default SVG size when external style missing. Prevent display to large SVG */
+		.icon{ width: 3rem; height: 3rem; }
+	</style>
 </head>
 
 <body>
+	<!-- Load icons sprite -->
+	<img src="./assets/icons/icons-sprite.svg" style="display: none">
+
 	<div class="site-wrap">
 		<main id="main">
 			<h1 class="page-title">Whoop Whoop</h1>
+			<svg class="icon">
+				<use xlink:href="./assets/icons/icons-sprite.svg#move-to-front">
+			</svg>
+			<svg class="icon">
+				<use xlink:href="./assets/icons/icons-sprite.svg#move-to-back">
+			</svg>
 		</main>
 
 		<aside id="sidebar" class="sidebar">
