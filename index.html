@@ -6,10 +6,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
 	<link href="./assets/css/style.css" type="text/css" rel="stylesheet">	
-	<style>
-		/* Default SVG size when external style missing. Prevent display to large SVG */
-		.icon{ width: 3rem; height: 3rem; }
-	</style>
 </head>
 
 <body>
@@ -19,16 +15,56 @@
 	<div class="site-wrap">
 		<main id="main">
 			<h1 class="page-title">Whoop Whoop</h1>
-			<svg class="icon">
-				<use xlink:href="./assets/icons/icons-sprite.svg#move-to-front">
-			</svg>
-			<svg class="icon">
-				<use xlink:href="./assets/icons/icons-sprite.svg#move-to-back">
-			</svg>
 		</main>
 
 		<aside id="sidebar" class="sidebar">
-			<header class="sidebar__section sidebar__header">Hader</header>
+			<header class="sidebar__section sidebar__header">
+				
+				<div class="toolbar">			
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-left">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-v-center">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-right">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-top">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-h-center">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#align-bottom">
+						</svg>
+					</button>
+
+					<div class="toolbar__divider"></div>
+
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#move-to-front">
+						</svg>
+					</button>
+					<button class="btn">
+						<svg class="btn__icon icon">
+							<use xlink:href="./assets/icons/icons-sprite.svg#move-to-back">
+						</svg>
+					</button>
+			</header>
 			<div class="sidebar__section">Section</div>
 
 			<div class="sidebar__section accordion">

@@ -9,6 +9,11 @@
 	padding: 1.5rem 2rem;
 }
 
+.sidebar__header {
+	padding-left: 1.1rem;
+	padding-right: 1.1rem;
+}
+
 .sidebar__section:not(.sidebar__header) {
 	border-top: 1px solid $sidebar-border-color;
 }
