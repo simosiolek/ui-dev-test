@@ -1,14 +1,19 @@
 // Accordion
 
 .accordion__title {
-	cursor: pointer;
-	color: #5E5E5E;
+	cursor: default;
+	color: $font-color;
 	font-size: 1rem;
 	text-transform: uppercase;
-}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-.accordion__title:hover {
-	color: red;
+	&:hover {
+		.btn {
+			background-color: $btn-bg-color-hover;
+		}
+	}
 }
 
 .accordion__panel {
