@@ -1,0 +1,16 @@
+// Toolbar
+
+.toolbar {
+	display: flex;
+
+	.btn {
+		margin: 0;
+	}
+}
+
+.toolbar__divider {
+	display: flex;
+	margin: 0.4rem 0.8rem;
+	width: 0.1rem;
+	background-color: #F3F3F3;
+}

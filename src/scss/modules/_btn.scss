@@ -1,0 +1,46 @@
+// Buttons
+
+.btn {
+	background-color: $btn-bg-color;
+	border: none;
+	border-radius: 0.3rem;
+	color: $dark-layout-color;
+	width: 3rem;
+	height: 3rem;
+	padding: 0.8rem;
+	margin: 0 0 0 -0.415rem;
+	display: inline-flex;
+	transition: background-color $transition;
+
+	&:hover,
+	&:active {
+		background-color: $btn-bg-color-hover;
+	}
+}
+
+.btn--small {
+	width: 1.9rem;
+	height: 1.9rem;
+	padding: 0.5rem;
+}
+
+.btn--outline {
+	border: 1px solid $btn-border-color;
+	width: 1.8rem;
+	height: 1.8rem;
+	padding: 0.4rem;
+}
+
+.btn__icon {
+	height: 100%;
+	width: 100%;
+	fill: #6A6A6A;
+
+	.btn--small & {
+		fill: #A6A6A6;
+	}
+
+	.btn--outline & {
+		fill: #5E5E5E;
+	}
+}
