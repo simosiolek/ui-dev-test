@@ -109,7 +109,7 @@ gulp.task( 'icons', function() {
 // Watch for changes
 //---------------------------------------------------------------------//
 
-gulp.task('default', ['scss', 'js']);
+gulp.task('default', ['scss', 'js', 'icons']);
 gulp.task('watch', function () {
    gulp.watch(folder.scss, ['scss']);
    gulp.watch(folder.jsSrc, ['js']);
