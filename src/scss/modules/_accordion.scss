@@ -15,9 +15,3 @@
 		}
 	}
 }
-
-.accordion__panel {
-   max-height: 0;
-   overflow: hidden;
-   transition: max-height $transition;
-}

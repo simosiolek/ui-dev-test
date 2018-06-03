@@ -1,0 +1,9 @@
+// Toggle
+
+[data-toggle="vertical"] + * {
+	@include toggle(vertical);
+}
+
+[data-toggle="horizontal"] + * {
+	@include toggle(horizontal);
+} 

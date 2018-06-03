@@ -1,0 +1,17 @@
+//  Variables
+
+//  Toggle
+//  Options: horizontal, vertical
+//
+@mixin toggle($direction) {
+	overflow: hidden;
+  
+   @if $direction == vertical {
+      max-height: 0;
+   	transition: max-height $transition;
+
+  } @else if $direction == horizontal {
+      max-width: 0;
+   	transition: max-width $transition;
+  }
+}

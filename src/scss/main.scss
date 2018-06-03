@@ -6,6 +6,7 @@
 // Required files
 //
 @import 'config/variables';
+@import 'config/mixins';
 @import 'config/global';
 
 //	Layout
@@ -17,4 +18,6 @@
 //
 @import 'modules/accordion';
 @import 'modules/btn';
+@import 'modules/inputs';
+@import 'modules/toggle';
 @import 'modules/toolbar';
