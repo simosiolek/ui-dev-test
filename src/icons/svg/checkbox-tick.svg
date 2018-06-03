@@ -1,0 +1,11 @@
+<svg id="checkbox-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>checkbox-tick</title>
+  <path class="cls-1" d="M478,74.67c-17.35-20-45.46-20-62.89,0l-220,253.23L96.89,214.8c-17.34-20-45.46-20-62.89,0s-17.34,52.39,0,72.37L163.71,436.41c17.35,20,45.46,20,62.89,0L478,147c17.35-20,17.35-52.39,0-72.37Z"/>
+</svg>

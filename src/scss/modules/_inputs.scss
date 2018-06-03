@@ -1,0 +1,121 @@
+// Inputs
+
+label {
+	display: block;
+	color: $layout-color;
+	font-size: $input-label-font-size;
+}
+
+input,
+.select__input {
+	font-size: $input-font-size;
+	color: $input-color;
+	border: none;
+	border-bottom: 1px solid $btn-border-color;
+	padding: 0.5rem 0 0.7rem 0;
+	margin: 0;
+	transition: border $transition;
+
+	&:hover,
+	&:focus {
+		border-color: $primary-color;
+	}
+}
+
+// Input
+//
+.input__field {
+	width: 100%;
+
+	.input--prefix & {
+		padding-left: 1.4rem;
+		margin-left: -1.5rem;
+	}	
+}
+
+.input__prefix {
+	color: #B3B3B3;
+	font-size: $input-font-size;
+	position: relative;
+}
+
+
+// Select
+//
+.select {
+	position: relative;
+
+	.icon {
+		fill: #999999;
+		width: 0.7rem;
+		height: 0.7rem;
+	}
+}
+
+.select__input,
+.select__list {
+	cursor: default;
+}
+
+.select__input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.select__list {
+	background-color: #FFFFFF;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+.select__item {
+	font-size: 1.3rem;
+	padding: 0.2rem 0;
+
+	&:first-child {
+		padding-top: 0.7rem;
+	}
+
+	&:last-child {
+		padding-bottom: 0.7rem;
+	}
+}
+
+
+// Select
+//
+.checkbox {
+	display: inline-block;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+.checkbox__box {
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 1px solid $input-border-color;
+	border-radius: 0.3rem;
+	display: block;
+	transition: border $transition, background-color $transition;
+
+	&:hover,
+	&:focus {
+		border-color: $primary-color;
+	}
+}
+
+input[type=checkbox]:checked + .checkbox__box {
+	background-color: $primary-color;
+	background-image: url("../icons/checkbox-tick.svg");
+	border-color: $primary-color;
+	background-size: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+}

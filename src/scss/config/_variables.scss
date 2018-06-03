@@ -14,15 +14,26 @@ $light-layout-color: #F6F6F6; // Layout borders
 $layout-color: #B3B3B3;			// Input label
 $dark-layout-color: #5E5E5E;  // Font
 
+$primary-color: #006CFF;
+
 // Buttons
 //
 $btn-bg-color: #FFFFFF;
 $btn-bg-color-hover: #F3F3F3;
 $btn-border-color: #E6E6E6;
 
+// Inputs
+//
+$input-font-size: 1.3rem;
+$input-color: $font-color;
+$input-border-color: #E6E6E6;
+
+$input-label-color: $layout-color;
+$input-label-font-size: 1rem;
+
 // Effects
 //
-$transition: 0.15s;
+$transition: 0.15s linear;
 
 // Sidebar
 //
