@@ -3,7 +3,7 @@
 .btn {
 	background-color: $btn-bg-color;
 	border: none;
-	border-radius: 0.3rem;
+	border-radius: $radius;
 	color: $dark-layout-color;
 	width: 3rem;
 	height: 3rem;

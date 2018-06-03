@@ -1,20 +1,113 @@
 // Inputs
 
+
+
+.preset {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.preset__item {
+	margin: 0 0.4rem;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.preset__item--primary {
+	flex: 0 0 4rem;
+}
+
+.preset__item--decimal {
+	flex: 0 0 2.4rem;
+}
+
+.preset__item--hex {
+	flex: 0 0 6.2rem;
+}
+
+.preset__item--checkbox {
+	line-height: 1.15;
+}
+
+.preset__label {
+	font-size: $input-font-size;
+	margin: 0.3rem 0 0 0;
+}
+
+
+
+// Pick color, gradient, shadow
+//
+.pick {
+	border-radius: $radius;
+	cursor: pointer;
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+.pick--color {
+	background-color: magenta;
+}
+
+.pick--gradient {
+	background: linear-gradient(to right, black , gray);
+}
+
+.pick--shadow {
+	background-color: rgba(100, 100, 100, 0.4);
+	background-attachment: scroll, scroll, scroll;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.098) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.098) 75%, rgba(0, 0, 0, 0.098) 0px), linear-gradient(45deg, rgba(0, 0, 0, 0.098) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.098) 75%, rgba(0, 0, 0, 0.098) 0px), none;
+	background-repeat: repeat;
+	background-position: 0px 0px, 4px 4px;
+	background-origin: padding-box;
+	background-clip: border-box;
+	background-size: 8px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 label {
 	display: block;
 	color: $layout-color;
 	font-size: $input-label-font-size;
 }
 
+
+
 input,
 .select__input {
+	display: block;
 	font-size: $input-font-size;
 	color: $input-color;
 	border: none;
 	border-bottom: 1px solid $btn-border-color;
-	padding: 0.5rem 0 0.7rem 0;
-	margin: 0;
+	padding: 0 0 0.7rem 0;
+	margin: 0 0 0.5rem 0;
 	transition: border $transition;
+	height: 2.2rem;
 
 	&:hover,
 	&:focus {
@@ -25,19 +118,34 @@ input,
 // Input
 //
 .input__field {
-	width: 100%;
-
-	.input--prefix & {
-		padding-left: 1.4rem;
-		margin-left: -1.5rem;
-	}	
+	width: 100%;	
 }
+
+
+.input--prefix {
+	position: relative;
+
+	.input__field {
+		padding-left: 1.2rem;	
+	}
+}
+
 
 .input__prefix {
 	color: #B3B3B3;
 	font-size: $input-font-size;
-	position: relative;
+	position: absolute;
+	line-height: 1.15;
 }
+
+
+
+
+
+
+
+
+
 
 
 // Select
@@ -61,6 +169,10 @@ input,
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	&.is-open + .select__list {
+		overflow: visible;
+	}
 }
 
 .select__list {
@@ -101,7 +213,7 @@ input[type=checkbox] {
 	width: 1.2rem;
 	height: 1.2rem;
 	border: 1px solid $input-border-color;
-	border-radius: 0.3rem;
+	border-radius: $radius;
 	display: block;
 	transition: border $transition, background-color $transition;
 
