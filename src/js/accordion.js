@@ -1,7 +1,5 @@
-/* Acoordion
- *
- * https://www.w3schools.com/howto/howto_js_accordion.asp
- */
+// Toggle
+//
 var acc = document.getElementsByClassName("js--toggle");
 var i;
 
@@ -28,4 +26,22 @@ for (i = 0; i < acc.length; i++) {
 			panel.style.maxWidth = panel.scrollWidth + "px";
 		} 
 	});
+}
+
+
+
+
+// Reference point button
+// https://stackoverflow.com/a/40153647
+//
+var refPoint = document.querySelectorAll('.ref-point div');
+
+	for (let i = 0; i < refPoint.length; i++) {
+		refPoint[i].onclick = function() {
+			var c = 0;
+		while (c < refPoint.length) {
+			refPoint[c++].className = '';
+		}
+		refPoint[i].className = 'is-active';
+	};
 }

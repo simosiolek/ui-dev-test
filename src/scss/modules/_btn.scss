@@ -8,13 +8,18 @@
 	width: 3rem;
 	height: 3rem;
 	padding: 0.8rem;
-	margin: 0 0 0 -0.415rem;
+	margin: 0;
+	//margin: 0 0 0 -0.415rem;
 	display: inline-flex;
 	transition: background-color $transition;
 
 	&:hover,
 	&:active {
 		background-color: $btn-bg-color-hover;
+	}
+
+	&:disabled {
+		background-color: transparent !important;
 	}
 }
 
@@ -42,5 +47,29 @@
 
 	.btn--outline & {
 		fill: #5E5E5E;
+	}
+}
+
+// Reference point button
+//
+.ref-point {
+	width: 2.1rem;
+	height: 2.1rem;
+	margin: -0.1rem;
+
+	> div {
+		border: 1px solid #D9D9D9;
+		background-color: #FFFFFF;
+		width: 0.5rem;
+		height: 0.5rem;
+		margin: 0.1rem;
+		float: left;
+
+
+		&:hover,
+		&.is-active {
+			border: 1px solid $dark-layout-color;
+			background-color: $dark-layout-color;
+		}
 	}
 }
