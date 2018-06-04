@@ -8,11 +8,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 1.6rem;
 
 	&:hover {
 		.btn {
 			background-color: $btn-bg-color-hover;
 		}
+	}
+}	
+.accordion__panel {
+	> div:first-child {
+		padding-top: 1.6rem;
 	}
 }
