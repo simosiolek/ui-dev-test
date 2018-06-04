@@ -1,0 +1,57 @@
+// Preset
+
+.preset {
+	display: flex;
+	margin-bottom: 1rem;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.preset__item {
+	margin: 0 0.4rem;
+
+	&:first-child {
+		margin-left: 0;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.preset__item--primary {
+	flex: 0 0 4rem;
+}
+
+.preset__item--decimal {
+	flex: 0 0 2.4rem;
+}
+
+.preset__item--triple {
+	flex: 0 0 3.4rem;
+}
+
+.preset__item--wide {
+	flex: 0 0 8rem;
+}
+
+.preset__item--hex {
+	flex: 0 0 6.2rem;
+}
+
+.preset__item--checkbox {
+	line-height: 1.15;
+}
+
+.preset__item--label {
+	flex: 0 0 7rem;
+}
+
+.preset__label {
+	color: #8C8C8C;
+	font-size: $input-font-size;
+	margin: 0;
+	line-height: 1.15;
+}
