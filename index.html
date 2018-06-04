@@ -16,6 +16,26 @@
 		<main id="main">
 			<h1 class="page-title">Whoop Whoop</h1>
 
+			<div class="select select--no-hover" style="width: 10rem;" >
+				<div class="select__input js--toggle" data-toggle="vertical">
+					<span class="line-option line-option--dashed"></span>
+					<svg class="icon">
+						<use xlink:href="./assets/icons/icons-sprite.svg#arrow-down">
+					</svg>
+				</div>
+				<ul class="select__list">
+					<li class="select__item" val="lineOptSolid">
+						<span class="line-option line-option--solid"></span>
+					</li>
+					<li class="select__item" val="lineOptDashed">
+						<span class="line-option line-option--dashed"></span>
+					</li>
+					<li class="select__item" val="lineOptDotted">
+						<span class="line-option line-option--dotted"></span>
+					</li>
+				</ul>
+			</div>
+
 		</main>
 
 		<aside id="sidebar" class="sidebar">
@@ -375,17 +395,23 @@
 						</div>
 
 						<div class="preset__item preset__item--primary">
-							<div class="select">
+							<div class="select select--no-hover">
 								<div class="select__input js--toggle" data-toggle="vertical">
-									First
+									<span class="line-option line-option--dashed"></span>
 									<svg class="icon">
 										<use xlink:href="./assets/icons/icons-sprite.svg#arrow-down">
 									</svg>
 								</div>
 								<ul class="select__list">
-									<li class="select__item" val="solid">-----</li>
-									<li class="select__item" val="solid">- - -</li>
-									<li class="select__item" val="dashed">.....</li>
+									<li class="select__item" val="lineOptSolid">
+										<span class="line-option line-option--solid"></span>
+									</li>
+									<li class="select__item" val="lineOptDashed">
+										<span class="line-option line-option--dashed"></span>
+									</li>
+									<li class="select__item" val="lineOptDotted">
+										<span class="line-option line-option--dotted"></span>
+									</li>
 								</ul>
 							</div>
 						</div>

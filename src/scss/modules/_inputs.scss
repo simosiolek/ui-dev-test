@@ -89,6 +89,7 @@ input[type=number]::-webkit-outer-spin-button {
 		fill: #999999;
 		width: 0.7rem;
 		height: 0.7rem;
+		margin-left: 1rem;
 	}
 }
 
@@ -131,10 +132,12 @@ input[type=number]::-webkit-outer-spin-button {
 		padding-bottom: 0.7rem;
 	}
 
-	&:hover,
-	&:focus {
-		border-color: $primary-color;
-	}
+	  .select:not(.select--no-hover) &  {
+	 		&:hover,
+			&:focus {
+				border-color: $primary-color;
+			}
+	 }
 }
 
 // Select
@@ -196,4 +199,37 @@ input[type=checkbox]:checked + .checkbox__box {
 	background-origin: padding-box;
 	background-clip: border-box;
 	background-size: 8px 8px;
+}
+
+// Select line options
+//
+
+.line-option {
+	display: block;
+	width: 100%;
+	border-top-width: 1px;
+	border-top-color: $dark-layout-color;
+	transition: border $transition;
+	margin: 0.5rem 0;
+}
+
+.select__item {
+	&:hover,
+	&:focus {
+		.line-option {
+			border-color: $primary-color;
+		}
+	}
+}
+
+.line-option--solid {
+	border-top-style: solid;
+}
+
+.line-option--dashed {
+	border-top-style: dashed;
+}
+
+.line-option--dotted {
+	border-top-style: dotted;
 }
