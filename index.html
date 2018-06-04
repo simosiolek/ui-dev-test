@@ -16,12 +16,26 @@
 		<main id="main">
 			<h1 class="page-title">Whoop Whoop</h1>
 
+
+			<div class="ref-point">
+				<div class="is-active"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+
 			<div class="checkbox">
 				<input type="checkbox" id="checkbox-1" />
     			<label for="checkbox-1" class="checkbox__box"></label>
     		</div>
 
-			<div class="input" style="width: 30%; float: left;">
+			<div class="input input--label-left" style="width: 30%; float: left;">
 				<input class="input__field" type="text" name="" value="Text">
 				<label>Opacity</label>
 			</div>
@@ -58,6 +72,19 @@
 				</ul>
 				<label>Horizontal</label>
 			</div>
+
+
+			<div class="preset__item preset__item--triple">
+							<div class="input input--sufix">
+								<input class="input__field" type="text" name="" value="359">
+								<span class="input__sufix">&percnt;</span>
+							</div>
+						</div>
+
+
+
+
+
 
 		</main>
 
@@ -110,7 +137,220 @@
 					</button>
 			</header>
 
-			<div class="sidebar__section"></div>
+			<div class="sidebar__section">
+				<div class="preset">
+					<div class="preset__item preset__item--hex">
+						<div class="input input--label-left">
+							<input class="input__field" type="number" name="" value="0">
+							<label>W</label>
+						</div>
+					</div>
+					<div class="preset__item">
+						<button class="btn btn--small">
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#move-to-front">
+							</svg>
+						</button>
+					</div>
+					<div class="preset__item preset__item--hex">
+						<div class="input input--label-left">
+							<input class="input__field" type="number" name="" value="0">
+							<label>W</label>
+						</div>
+					</div>
+					<div class="preset__item">
+						<div class="ref-point">
+							<div class="is-active"></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="preset preset--position">
+					<div class="preset__item preset__item--hex">
+						<div class="input input--label-left">
+							<input class="input__field" type="number" name="" value="0">
+							<label>X</label>
+						</div>
+					</div>
+						<div class="preset__item">
+						<button class="btn btn--small" disabled>
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#">
+							</svg>
+						</button>
+					</div>
+					
+					<div class="preset__item preset__item--hex">
+						<div class="input input--label-left">
+							<input class="input__field" type="number" name="" value="0">
+							<label>Y</label>
+						</div>
+					</div>
+		 			
+
+		 			<div class="preset__item">
+						<div class="checkbox">
+							<input type="checkbox" id="positionSticky" />
+			    			<label for="positionSticky" class="checkbox__box"></label>
+			    		</div>	
+			    	</div>
+
+					<div class="preset__item">
+						<p class="preset__label">Sticky</p>
+					</div>
+				</div>
+
+				<div class="preset">
+					<div class="preset__item preset__item--label">
+						<p class="preset__label">Rotation</p>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0&deg;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="sidebar__section">
+
+				<div class="preset">
+					<div class="preset__item preset__item--label">
+						<p class="preset__label">Radius</p>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>TL</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>TR</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>BR</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>BL</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<button class="btn btn--outline">
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#plus">
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="preset">
+					<div class="preset__item preset__item--label">
+						<p class="preset__label">Padding</p>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>Left</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>Top</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>Right</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="0">
+							<label>Btm</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--decimal">
+						<button class="btn btn--outline">
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#plus">
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="preset">
+					<div class="preset__item preset__item--label">
+						<p class="preset__label">Padding</p>
+					</div>
+
+					<div class="preset__item preset__item--wide">
+						<div class="select">
+							<div class="select__input js--toggle" data-toggle="vertical">
+								Normal
+								<svg class="icon">
+									<use xlink:href="./assets/icons/icons-sprite.svg#arrow-down">
+								</svg>
+							</div>
+							<ul class="select__list">
+								<li class="select__item" val="Normal">Normal</li>
+								<li class="select__item" val="Color">Color</li>
+								<li class="select__item" val="Color-Burn">Color-Burn</li>
+								<li class="select__item" val="Color-Dodge">Color-Dodge</li>
+								<li class="select__item" val="Darken">Darken</li>
+								<li class="select__item" val="Difference">Difference</li>
+								<li class="select__item" val="Exclusion">Exclusion</li>
+								<li class="select__item" val="Hard-Light">Hard-Light</li>
+								<li class="select__item" val="Hue">Hue</li>
+								<li class="select__item" val="Lighten">Lighten</li>
+								<li class="select__item" val="Luminosity">Luminosity</li>
+								<li class="select__item" val="Multiply">Multiply</li>
+								<li class="select__item" val="Overlay">Overlay</li>
+								<li class="select__item" val="Saturation">Saturation</li>
+								<li class="select__item" val="Screen">Screen</li>
+								<li class="select__item" val="Soft-Light">Soft-Light</li>
+							</ul>
+							<label>Blending</label>
+						</div>
+					</div>
+
+					<div class="preset__item preset__item--primary">
+						<div class="input">
+							<input class="input__field" type="text" name="" value="40%">
+							<label>Opacity</label>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<div class="sidebar__section accordion">
 				<div class="accordion__title js--toggle" data-toggle="vertical">
