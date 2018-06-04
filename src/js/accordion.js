@@ -28,7 +28,17 @@ for (i = 0; i < acc.length; i++) {
 	});
 }
 
+// Toggle preset
+//
+var togglePreset = document.getElementsByClassName("js--toggle-preset");
+var t;
 
+for (t = 0; t < togglePreset.length; t++) {
+
+	togglePreset[t].addEventListener("click", function() {
+		this.closest(".preset--toggle").classList.toggle("is-open");
+	});
+}
 
 
 // Reference point button

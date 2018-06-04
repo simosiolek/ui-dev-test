@@ -224,7 +224,7 @@
 
 			<div class="sidebar__section">
 
-				<div class="preset">
+				<div class="preset preset--toggle">
 					<div class="preset__item preset__item--label">
 						<p class="preset__label">Radius</p>
 					</div>
@@ -236,37 +236,42 @@
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>TR</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>BR</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>BL</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
-						<button class="btn btn--outline">
+					<div class="preset__item preset__item--decimal js--toggle-preset">
+						<button class="btn btn--outline is-hide">
 							<svg class="btn__icon icon">
-								<use xlink:href="./assets/icons/icons-sprite.svg#plus">
+								<use xlink:href="./assets/icons/icons-sprite.svg#box">
+							</svg>
+						</button>
+						<button class="btn btn--outline is-visible">
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#box-corners">
 							</svg>
 						</button>
 					</div>
 				</div>
 
-				<div class="preset">
+				<div class="preset preset--toggle">
 					<div class="preset__item preset__item--label">
 						<p class="preset__label">Padding</p>
 					</div>
@@ -278,31 +283,36 @@
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>Top</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>Right</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
+					<div class="preset__item preset__item--decimal is-hide">
 						<div class="input">
 							<input class="input__field" type="text" name="" value="0">
 							<label>Btm</label>
 						</div>
 					</div>
 
-					<div class="preset__item preset__item--decimal">
-						<button class="btn btn--outline">
+					<div class="preset__item preset__item--decimal js--toggle-preset">
+						<button class="btn btn--outline is-hide">
 							<svg class="btn__icon icon">
-								<use xlink:href="./assets/icons/icons-sprite.svg#plus">
+								<use xlink:href="./assets/icons/icons-sprite.svg#box">
+							</svg>
+						</button>
+						<button class="btn btn--outline is-visible">
+							<svg class="btn__icon icon">
+								<use xlink:href="./assets/icons/icons-sprite.svg#box-padding">
 							</svg>
 						</button>
 					</div>
@@ -586,3 +596,6 @@
 	<script src="./assets/js/app.js" type="text/javascript"></script>
 </body>
 </html>
+
+
+

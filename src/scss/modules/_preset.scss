@@ -55,3 +55,27 @@
 	margin: 0;
 	line-height: 1.15;
 }
+
+// Preset toggle
+//
+.preset--toggle {
+	label,
+	.is-hide {
+		display: none;
+	}
+
+	&.is-open {
+		label,
+		.is-hide,{
+			display: block;
+		}
+
+		.btn.is-hide {
+			display: flex;
+		}
+
+		.is-visible {
+			display: none;
+		}
+	}
+}
