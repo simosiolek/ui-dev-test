@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>box-padding</title>
+  <g id="box-padding">
+    <rect x="139.01" y="21.05" width="234.66" height="58.67"/>
+    <rect x="21.68" y="138.38" width="58.66" height="234.67"/>
+    <rect x="432.34" y="138.38" width="58.66" height="234.67"/>
+    <rect x="139.01" y="431.71" width="234.66" height="58.66"/>
+  </g>
+</svg>
