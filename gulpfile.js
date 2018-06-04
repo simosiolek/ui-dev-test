@@ -67,7 +67,7 @@ gulp.task('js', ['clean-js'],  function() {
 			folder.jsSrc	
 		])
 		.pipe(concat('app.js'))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest(folder.js))
 });
 
